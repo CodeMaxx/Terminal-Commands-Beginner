@@ -61,7 +61,7 @@ Some commands can be found in the `bin` directory.
 `-r` recursively do a task(looks in subdirectories too)
 
 
-vim commands:
+###### Vim commands:
  
  vim <filename> : opens the file with name "filename" or creates the file with the name given as argument if the file does nt exist in the working directory.
  

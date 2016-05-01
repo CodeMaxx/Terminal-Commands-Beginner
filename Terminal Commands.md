@@ -62,7 +62,9 @@ Some commands can be found in the `bin` directory.
 
 
 vim commands:
+ 
  vim <filename> : opens the file with name "filename" or creates the file with the name given as argument if the file does nt exist in the working directory.
  
- i - allows editing the file
+ i - allows editing the file.
+ 
  esc + : x - saves and exits vim 

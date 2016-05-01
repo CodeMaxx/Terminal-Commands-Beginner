@@ -67,4 +67,4 @@ vim commands:
  
  i - allows editing the file.
  
- esc + : x - saves and exits vim 
+ esc + : x - saves and exits vim.

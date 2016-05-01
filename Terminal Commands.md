@@ -63,7 +63,7 @@ Some commands can be found in the `bin` directory.
 
 ###### Vim commands:
  
- vim <filename> : opens the file with name "filename" or creates the file with the name given as argument if the file does nt exist in the working directory.
+ vim <filename> : opens the file with name "filename".Creates a new file in case it does not exist.
  
  i - allows editing the file.
  

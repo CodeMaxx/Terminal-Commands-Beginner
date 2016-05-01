@@ -65,6 +65,4 @@ Some commands can be found in the `bin` directory.
  
  vim <filename> : opens the file with name "filename".Creates a new file in case it does not exist.
  
- i - allows editing the file.
- 
- esc + : x - saves and exits vim.
+ subl <filename> : opens a file with filename in sublime text.

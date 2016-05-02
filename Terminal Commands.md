@@ -59,7 +59,7 @@ Some commands can be found in the `bin` directory.
 
 `iwconfig` - similar to `ifconfig`, but used for wireless network interfaces. <br/>
 
-##### "Flags"
+##### Flags
 
 `-f` forcefully do a task i.e. without asking for confirmation<br/>
 `-r` recursively do a task(looks in subdirectories too)

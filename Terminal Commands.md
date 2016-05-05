@@ -61,8 +61,5 @@ Some commands can be found in the `bin` directory.
 `-r` recursively do a task(looks in subdirectories too)
 
 
-###### Vim commands:
- 
- vim <filename> : opens the file with name "filename".Creates a new file in case it does not exist.
- 
  subl <filename> : opens a file with filename in sublime text.
+ gedit <filename> : opens a file with filename in gedit 

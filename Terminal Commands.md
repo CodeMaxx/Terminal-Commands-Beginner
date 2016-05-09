@@ -30,7 +30,7 @@ Some commands can be found in the `bin` directory.
 
 `grep <text to search> <files to search in>`
 
-`cut` is used to cut a part of a file<br>
+`cut` - cuts out selected portions of each line from file and writes them to the standard output.<br>
 `cut -c 2-5 file` - cut characters 2 to 5 from each line of file<br>
 `cut -d"x" -f 1 file` - returns each part of every line before first occurance of 'x' (-d is delimiter and -f is field)
 
@@ -79,6 +79,17 @@ Example: `cat file | less`
 - **Trivia:** All commands typed in the terminal are saved in `history` or the `.bash_history` file in the home directory. 
 `history | less` or `cat ~/.bash_history` will let you scroll through previously typed commands.
 
+##### Flags
+
+`-f` forcefully do a task i.e. without asking for confirmation<br/>
+`-r` recursively do a task(looks in subdirectories too)
+
+##### Opening files with common Text Editors
+
+`(vim|vi|nano|emacs) <filename>` : opens a file in the respective text editor inside the terminal.<br/> 
+`subl <filename>` : opens a file with filename in sublime text.<br/>
+`gedit <filename>` : opens a file with filename in gedit .
+
 ##### Aliases 
 
 An alias is a word assigned to a statement, and acts as a keyboard shortcut.
@@ -114,14 +125,3 @@ A particular process can be terminated using `kill`
 `kill <PID>` - kills the process having PID as that entered.<br>
 `kill -9 <PID>` - performs a violent kill<br>
 `killall <processname>` - kills all instances of processname
-
-##### Flags
-
-`-f` forcefully do a task i.e. without asking for confirmation<br/>
-`-r` recursively do a task(looks in subdirectories too)
-
-##### Opening files with common Text Editors
-
-`(vim|vi|nano|emacs) <filename>` : opens a file in the respective text editor inside the terminal.<br/> 
-`subl <filename>` : opens a file with filename in sublime text.<br/>
-`gedit <filename>` : opens a file with filename in gedit .

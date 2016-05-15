@@ -124,7 +124,7 @@ This are just examples. `chmod` has a lot of different configurations for differ
 
 `dig example.com` - Queries DNS servers for information. Using the `+short` flag returns the IP address linked to the domain name.
 
-`whois domain_name.com` - Generates a long list of output regarding the server registration. Should be used with `grep`.
+`whois domain_name.com` - Generates a long list of output regarding the server registration.
 
 ##### Extracting .tar files
 

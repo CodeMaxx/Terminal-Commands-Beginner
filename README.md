@@ -167,8 +167,11 @@ This are just examples. `chmod` has a lot of different configurations for differ
 `ping domain_name_or_ip_address` - Used to ping a domain name or IP address continuously. It can be stopped by `^C`. Generally used to check if the server is up and responding.
 
 `dig example.com` - Queries DNS servers for information. Using the `+short` flag returns the IP address linked to the domain name.
+`dig -x IP address` - Queries and returns a PTR (pointer) record against the IP address queried. Example `dig -x 127.0.0.1` returns `localhost`
+`arp` arp manipulates or displays the kernel's <i>IPv4</i> network neighbour cache. It can add entries to the table, delete one, or display the current content.
 
 `whois domain_name.com` - Generates a long list of output regarding the server registration.
+
 
 ##### Extracting .tar.gz files
 

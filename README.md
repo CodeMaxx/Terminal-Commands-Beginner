@@ -309,3 +309,12 @@ A particular process can be terminated using `kill`
 `kill <PID>` - kills the process having PID as that entered.<br>
 `kill -9 <PID>` - performs a violent kill<br>
 `killall <processname>` - kills all instances of processname
+
+### Secure SHell
+
+SSH is some kind of an abbreviation of Secure SHell. It is a protocol that allows secure connections between computers.
+ssh (SSH client) is a program for logging into a remote machine and for executing commands on a remote machine.<br>
+
+`ssh yourserver` - In the most simple case, you can connect to a server that supports ssh.<br>
+`ssh yourusername@yourserver` - specify a different username.<br>
+`ssh -p yourport yourusername@yourserver` - Specifying a port.<br>

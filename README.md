@@ -320,17 +320,16 @@ ssh (SSH client) is a program for logging into a remote machine and for executin
 `ssh -p yourport yourusername@yourserver` - Specifying a port.<br>
 
 - **Important flags**<br>
-`-1` - Use protocol version 1 only.<br>
-`-2` - Use protocol version 2 only.<br>
-`-4` - Use IPv4 addresses only.<br>
-`-6` - Use IPv6 addresses only.<br>
-`-A` - Enable forwarding of the authentication agent connection.<br>
+`-1` - Forces ssh to try protocol version 1 only.<br>
+`-2` - Forces ssh to try protocol version 2 only.<br>
+`-4` - Forces ssh to use IPv4 addresses only.<br>
+`-6` - Forces ssh to use IPv6 addresses only.<br>
+`-A` - Enable forwarding of the authentication agent connection.This forwards the connection to your ssh agent to the remote computer.<br>
 `-a` - Disable forwarding of the authentication agent connection.<br>
 `-q` - Quiet mode.<br>
 `-V` - Display the version number.<br>
-`-v` - Verbose mode.<br>
-`-X` - Enables X11 forwarding.<br>
+`-v` - Verbose mode. Causes ssh to print debugging messages about its progress. This is helpful in debugging connection, authentication, and configuration problems.<br>
+`-X` - Enables X11 forwarding which lets you run graphical applications remotely<br>
 `-x` - Disables X11 connection forwarding.<br>
-`-t` - Forces a tty allocation even if a command is specified.<br>
+`-t` - Forces a tty allocation even if a command is specified. This can be used to execute arbitrary screen-based programs on a remote   machine<br>
 `-Y` - Enables X11 connection forwarding and treats X11 clients as trusted.<br>
-

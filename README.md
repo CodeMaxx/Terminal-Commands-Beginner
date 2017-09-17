@@ -318,3 +318,19 @@ ssh (SSH client) is a program for logging into a remote machine and for executin
 `ssh yourserver` - In the most simple case, you can connect to a server that supports ssh.<br>
 `ssh yourusername@yourserver` - specify a different username.<br>
 `ssh -p yourport yourusername@yourserver` - Specifying a port.<br>
+
+- **Important flags**<br>
+`-1` - Use protocol version 1 only.<br>
+`-2` - Use protocol version 2 only.<br>
+`-4` - Use IPv4 addresses only.<br>
+`-6` - Use IPv6 addresses only.<br>
+`-A` - Enable forwarding of the authentication agent connection.<br>
+`-a` - Disable forwarding of the authentication agent connection.<br>
+`-q` - Quiet mode.<br>
+`-V` - Display the version number.<br>
+`-v` - Verbose mode.<br>
+`-X` - Enables X11 forwarding.<br>
+`-x` - Disables X11 connection forwarding.<br>
+`-t` - Forces a tty allocation even if a command is specified.<br>
+`-Y` - Enables X11 connection forwarding and treats X11 clients as trusted.<br>
+

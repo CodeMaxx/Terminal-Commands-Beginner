@@ -20,11 +20,16 @@
 
 (`cd ..` - takes to parent directory<br/>
  `cd` - takes to `<user>` directory[denoted by `~`]<br/>
+ `cd /` - takes to `root` directory[denoted by `/`]<br/>
  `cd -` - takes to the previous directory you were in)<br/>
 
 - **Trivia:** `user` directory is present in the `home` directory which is present in the `root` directory(denoted by `/`). [`/home/<user>` in Linux and `Users/<user>` in macOS] Then there is no further upper directory after `root`.
 
 `pwd` - print working directory. Prints absolute path to current directory.
+
+`pushd dirname` changes directory to dirname, and pushes it onto the head of the directory stack.<br/> 
+`popd` changes directory to the directory at the head of the directory stack, and pops it off.<br/>
+`dirs` see the contents of the directory stack.<br/>
 
 `^` symbol is used for representing 'ctrl' ... e.g. `^C` = ctrl key + c
 
@@ -209,9 +214,13 @@ This alias lasts as long as the terminal is running. To create a permanent alias
 
 `apt-get remove <package-name>` - Removes a package (but not the configuration files)
 
+`apt-get autoremove` - Remove packages that were automatically installed to satisfy dependencies for some package and that are no more needed.
+
 `apt-get purge <package-name>` - Removes a package (along with the configuration files)
 
 `apt-get update` - APT keeps a local database on your hard drive with a list of all available packages and where to find them. This command explicitly updates the database.
+
+`apt-get upgrade` - Installs newer versions of the packages.
 
 ##### Fedora, Red Hat and CentOS
 
@@ -277,7 +286,8 @@ This are just examples. `chmod` has a lot of different configurations for differ
 ### Extracting compressed files
 
 `tar -xvzf <file.tar.gz>` - used to extract the .tar.gz file<br>
-
+`gzip -d <file_to_decompress>` - used to extract the .gz file<br>
+`unzip <file.zip>` - used to extract the .zip file<br>
 <hr>
 
 ### Compressing files
@@ -290,7 +300,22 @@ This are just examples. `chmod` has a lot of different configurations for differ
 `-c`: Collects files to be compressed<br>
 `-v`: makes tar talk a lot. Verbose output shows you all the files being extracted.<br>
 `-z`: tells tar to decompress the archive using gzip<br>
-`-f`: this must be the last flag of the command, and the tar file must be immediately after. It tells tar the name and path of the compressed file.
+`-f`: this must be the last flag of the command, and the tar file must be immediately after. It tells tar the name and path of the compressed file.<br>
+
+`gzip file1 file2 file3` - used to compress any number of files into a .gz compressed format.<br>
+
+`zip archive.zip file1 file2 file3` - used to compress any number of files into a .zip compressed archive.<br>
+`zip -r archive.zip dir1 dir2 dir3` - used to compress any number of directories recursively into a .zip compressed archive.<br>
+
+- archive.zip: This is the name of the final compressed archive.<br>
+
+<hr>
+
+### See Compressed file contents without extracting
+
+`unzip -l archive.zip` - lists the contents of a ZIP archive.<br>
+`tar -tf archive.tar.gz` - lists the contents of a tar.gz archive.<br>
+`vim archive` - lists the contents of most types of archives.<br>
 
 <hr>
 
@@ -301,7 +326,8 @@ This are just examples. `chmod` has a lot of different configurations for differ
 `ps` returns the snapshot of current processes.<br>
 `ps -e` returns every process running on the system<br>
 `ps -u <useraccount>` returns list of processes running on user account.<br>
-`ps -u <useraccount> | grep <Application>` - fetches all processes of "Application"
+`ps -u <useraccount> | grep <Application>` - fetches all processes of "Application"<br>
+`pstree` display running processes as a tree
 
 The leftmost number returned by the `ps` command is called the Process ID (PID).
 A particular process can be terminated using `kill`

@@ -286,7 +286,8 @@ This are just examples. `chmod` has a lot of different configurations for differ
 ### Extracting compressed files
 
 `tar -xvzf <file.tar.gz>` - used to extract the .tar.gz file<br>
-`gzip -d <file_to_decompress>` - used to extract the .gz file<br>
+`gzip -d <file_to_decompress>.gz` - used to extract the .gz file<br>
+`gunzip <file_to_decompress>.gz` - used to extract the .gz file<br> 
 `unzip <file.zip>` - used to extract the .zip file<br>
 <hr>
 
@@ -302,7 +303,9 @@ This are just examples. `chmod` has a lot of different configurations for differ
 `-z`: tells tar to decompress the archive using gzip<br>
 `-f`: this must be the last flag of the command, and the tar file must be immediately after. It tells tar the name and path of the compressed file.<br>
 
-`gzip file1 file2 file3` - used to compress any number of files into a .gz compressed format.<br>
+`gzip file1 file2 file3` - used to compress any number of files into .gz compressed format.<br>
+
+- This method compresses each of the files separately and not into a single .gz archive.
 
 `zip archive.zip file1 file2 file3` - used to compress any number of files into a .zip compressed archive.<br>
 `zip -r archive.zip dir1 dir2 dir3` - used to compress any number of directories recursively into a .zip compressed archive.<br>

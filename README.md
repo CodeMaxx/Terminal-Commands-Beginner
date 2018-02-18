@@ -74,9 +74,11 @@
 `find -f <query>` - looks for a file with name `query`<br/>
 
 `history` - shows all typed commands history<br>
-`history n` -shows last n commands
+`history n` -shows last n commands<br>
 
-`sudo <command>` - Run the command as superuser(a.k.a. root)
+`gnome-terminal` - opens a new terminal window in the same directory of parent terminal<br>
+
+`sudo <command>` - Run the command as superuser(a.k.a. root)<br>
 
 `!<text>` - repeats a previous command in history which started with 'text'<br>
 `!!` - repeats the previous command<br>
@@ -91,6 +93,8 @@
 - **Trivia:**`sudo` stands for `SUperuser DO` and `su` stands for `Substitute User`.
 
 `man [section_number] <command>` - shows manual entry for the command. Manual contains all the flags related to that command and their use. Manpages have different sections. Refer to the list below:
+
+`apropos <argument>` - find the argument in all man pages.<br>
 
 ```
 MANUAL SECTIONS

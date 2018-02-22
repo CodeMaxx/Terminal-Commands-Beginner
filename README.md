@@ -13,7 +13,9 @@
 - **Important flags**<br>
 `-a` - display hidden files<br>
 `-R` - recursively displays files<br>
-`-l` - displays extra details like size, owner, group, date the file was last modified and permissions
+`-l` - displays extra details like size, owner, group, date the file was last modified and permissions<br/>
+
+`tree` - display files and directories as a tree structure.<br/>
 
 `cd <path>` - change directory to `path`<br/>
 - Here `path` may be relative or absolute.
@@ -62,12 +64,20 @@
 `cut -c 2-5 file` - cut characters 2 to 5 from each line of file<br>
 `cut -d"x" -f 1 file` - returns each part of every line before first occurrence of 'x' (-d is delimiter and -f is field)
 
+`wc [flag] filenames` - used to find out number of newline count, word count, byte and characters count in a files<br/>
 
-`clear` or `^l` - scrolls down to an empty screen
+- **Important flags**<br/>
+`-l` - Prints the number of lines in a file.<br/>
+`-w` - prints the number of words in a file.<br/>
+`-c` - Displays the count of bytes in a file.<br/>
+`-m` - prints the count of characters from a file.<br/>
+`-L` - prints only the length of the longest line in a file.<br/>
 
-`reset` - initialises terminal variables to thier default value
+`clear` or `^l` - scrolls down to an empty screen<br/>
 
-`passwd <username>` - Change password for a user
+`reset` - initialises terminal variables to thier default value<br/>
+
+`passwd <username>` - Change password for a user<br/>
 
 `find <query>` - finds files and directories with name `query` in the current directory and its subdirectories<br/>
 `find -d <query>` - looks for a directory with name `query`<br/>
@@ -77,6 +87,9 @@
 `history n` -shows last n commands<br>
 
 `gnome-terminal` - opens a new terminal window in the same directory of parent terminal<br>
+
+`exit` - exit terminal session<br/>
+**Note:** If you are inside virtual terminals like asciinema, tmux, screen, ssh and so on then upon exiting you will only exit virtual terminal session rather than exiting real terminal session.<br/>
 
 `sudo <command>` - Run the command as superuser(a.k.a. root)<br>
 
@@ -91,6 +104,8 @@
 **Note:** While `sudo -i` will ask you for your login password to become superuser, `su root` will ask for the root password. These are not the same. You may have to set or change the root password by running `sudo passwd root` first.
 
 - **Trivia:**`sudo` stands for `SUperuser DO` and `su` stands for `Substitute User`.
+
+`gksudo` - is used to pop up the `sudo` password prompt in a GUI window. <br/>
 
 `man [section_number] <command>` - shows manual entry for the command. Manual contains all the flags related to that command and their use. Manpages have different sections. Refer to the list below:
 
@@ -113,7 +128,9 @@ MANUAL SECTIONS
     which often include additional sections.
 ```
 
-`time <command>` - gives the time taken for the command to execute. Very useful when you want to find the execution time of your programs.
+`time <command>` - gives the time taken for the command to execute. Very useful when you want to find the execution time of your programs.<br/>
+
+`/usr/bin/time <command>` - to use format flags. Formatting output doesn't work straight away.<br/>
 
 `diff [file1] [file2]` - compares the two files line by line. Usually used to compare ideal output and user-generated output.<br>
 `diff -z [file1] [file2]` - Ignores trailing-whitespaces while comparing the two files
@@ -140,10 +157,25 @@ MANUAL SECTIONS
 
 Example: `cat file | less`
 
-`<output of some command> | more` - is similar to using `less`, but allows viewing one screen at a time.
+`<output of some command> | more` - is similar to using `less`, but allows viewing one screen at a time.<br/>
 
 - **Trivia:** All commands typed in the terminal are saved in `history` or the `.bash_history` file in the home directory.
 `history | less` or `cat ~/.bash_history` will let you scroll through previously typed commands.
+
+`sudo service <service_name> <option>` : manage services<br/>
+
+**common services** - press tab to list all services in terminal after typing `sudo service `<br/>
+`bluetooth`<br/>
+`network`<br/>
+`lightdm`<br/>
+`network-manager`<br/>
+`ssh`<br/>
+
+**options**<br/>
+`status`<br/>
+`start`<br/>
+`restart`<br/>
+`stop`<br/>
 
 <hr>
 
@@ -369,3 +401,11 @@ ssh (SSH client) is a program for logging into a remote machine and for executin
 `-X` - Enables X11 forwarding which lets you run graphical applications remotely<br>
 `-t` - Forces a tty allocation even if a command is specified. This can be used to execute shell commands on the remote machine<br>
 `-Y` - Enables X11 connection forwarding and treats X11 clients as trusted.<br>
+
+### Cryptography
+
+`sha1sum`     &nbsp; &nbsp;     - compute and check SHA1 message digest<br/>
+`sha224sum`        - compute and check SHA224 message digest<br/>
+`sha256sum`        - compute and check SHA256 message digest<br/>
+`sha384sum`        - compute and check SHA384 message digest<br/>
+`sha512sum`        - compute and check SHA512 message digest<br/>

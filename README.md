@@ -404,8 +404,8 @@ ssh (SSH client) is a program for logging into a remote machine and for executin
 
 ### Cryptography
 
-`sha1sum`     &nbsp; &nbsp;     - compute and check SHA1 message digest<br/>
-`sha224sum`        - compute and check SHA224 message digest<br/>
-`sha256sum`        - compute and check SHA256 message digest<br/>
-`sha384sum`        - compute and check SHA384 message digest<br/>
-`sha512sum`        - compute and check SHA512 message digest<br/>
+`sha1sum`   - compute and check SHA1 message digest<br/>
+`sha224sum` - compute and check SHA224 message digest<br/>
+`sha256sum` - compute and check SHA256 message digest<br/>
+`sha384sum` - compute and check SHA384 message digest<br/>
+`sha512sum` - compute and check SHA512 message digest<br/>

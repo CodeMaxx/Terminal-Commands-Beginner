@@ -64,7 +64,7 @@
 `cut -c 2-5 file` - cut characters 2 to 5 from each line of file<br>
 `cut -d"x" -f 1 file` - returns each part of every line before first occurrence of 'x' (-d is delimiter and -f is field)
 
-`wc [flag] filenames` - used to find out number of newline count, word count, byte and characters count in a files<br/>
+`wc filenames` - used to find out number of newline count, word count, byte and characters count in a files<br/>
 
 - **Important flags**<br/>
 `-l` - Prints the number of lines in a file.<br/>

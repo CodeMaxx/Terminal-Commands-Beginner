@@ -128,9 +128,9 @@ MANUAL SECTIONS
     which often include additional sections.
 ```
 
-`time <command>` - gives the time taken for the command to execute. Very useful when you want to find the execution time of your programs.<br/>
+`time <command>` - gives the time taken for the command to execute. Very useful when you want to find the execution time of your programs. This uses the `time` shell keyword<br/>
 
-`/usr/bin/time <command>` - to use format flags. Formatting output doesn't work straight away.<br/>
+`/usr/bin/time <command>` - to use the "real" time command with all its flags and options. [Reference](https://askubuntu.com/questions/434289/why-doesnt-the-time-command-work-with-any-option)<br/>
 
 `diff [file1] [file2]` - compares the two files line by line. Usually used to compare ideal output and user-generated output.<br>
 `diff -z [file1] [file2]` - Ignores trailing-whitespaces while comparing the two files

@@ -15,7 +15,7 @@
 `-R` - recursively displays files<br>
 `-l` - displays extra details like size, owner, group, date the file was last modified and permissions<br/>
 
-`tree` - display files and directories as a tree structure.<br/>
+`tree <path>` - display files and directories as a tree structure.<br/>
 
 `cd <path>` - change directory to `path`<br/>
 - Here `path` may be relative or absolute.
@@ -406,17 +406,17 @@ ssh (SSH client) is a program for logging into a remote machine and for executin
 
 ### Cryptography
 
-`md5sum` - compute and check MD5 message digest <br/>
+`md5sum <filename>` - compute and check MD5 message digest <br/>
 
-`sha1sum` - compute and check SHA1 message digest<br/>
-`sha224sum` - compute and check SHA224 message digest<br/>
-`sha256sum` - compute and check SHA256 message digest<br/>
-`sha384sum` - compute and check SHA384 message digest<br/>
-`sha512sum` - compute and check SHA512 message digest<br/>
+`sha1sum <filename>` - compute and check SHA1 message digest<br/>
+`sha224sum <filename>` - compute and check SHA224 message digest<br/>
+`sha256sum <filename>` - compute and check SHA256 message digest<br/>
+`sha384sum <filename>` - compute and check SHA384 message digest<br/>
+`sha512sum <filename>` - compute and check SHA512 message digest<br/>
 
-`base32` - base32 encode/decode data and print to standard output<br/>
-`base64` - base64 encode/decode data and print to standard output<br/>
+`base32 <filename>` - base32 encode/decode data and print to standard output<br/>
+`base64 <filename>` - base64 encode/decode data and print to standard output<br/>
 
 **Note:** By default base32/base64 will encode data. use `-d` flag to decode data<br/>
 
-**Note:** Above mentioned commands takes file as input. To calcute hash ot text directly use `echo -n "text" | {command}`. Use of `-n` flag is mandatory. Without it, your hash will be totally wrong since it includes the newline character.<br/>
+**Note:** Above mentioned commands takes file as input. To calcute hash of text directly use `echo -n "text" | {command}`. Use of `-n` flag is mandatory. Without it, your hash will be totally wrong since it includes the newline character.<br/>

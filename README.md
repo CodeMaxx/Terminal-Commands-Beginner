@@ -402,10 +402,21 @@ ssh (SSH client) is a program for logging into a remote machine and for executin
 `-t` - Forces a tty allocation even if a command is specified. This can be used to execute shell commands on the remote machine<br>
 `-Y` - Enables X11 connection forwarding and treats X11 clients as trusted.<br>
 
+<hr>
+
 ### Cryptography
 
-`sha1sum`   - compute and check SHA1 message digest<br/>
+`md5sum` - compute and check MD5 message digest <br/>
+
+`sha1sum` - compute and check SHA1 message digest<br/>
 `sha224sum` - compute and check SHA224 message digest<br/>
 `sha256sum` - compute and check SHA256 message digest<br/>
 `sha384sum` - compute and check SHA384 message digest<br/>
 `sha512sum` - compute and check SHA512 message digest<br/>
+
+`base32` - base32 encode/decode data and print to standard output<br/>
+`base64` - base64 encode/decode data and print to standard output<br/>
+
+**Note:** By default base32/base64 will encode data. use `-d` flag to decode data<br/>
+
+**Note:** Above mentioned commands takes file as input. To calcute hash ot text directly use `echo -n "text" | {command}`. Use of `-n` flag is mandatory. Without it, your hash will be totally wrong since it includes the newline character.<br/>
